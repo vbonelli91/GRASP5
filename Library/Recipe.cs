@@ -9,7 +9,8 @@ using System.Collections.Generic;
 
 namespace Full_GRASP_And_SOLID
 {
-    public class Recipe
+    //por DIP moficiamos para que implemente la interfaz IPrinterContent
+    public class Recipe: IPrinterContent
     {
         // Cambiado por OCP
         private IList<BaseStep> steps = new List<BaseStep>();
